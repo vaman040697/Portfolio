@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="glitch.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/3010d50a28.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <p class="glitch" style="font-size:xx-large;">Vaman.</p>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Computer Science Student</p>
+                <h1>Hi, I'm <span class="glitch" aria-hidden="true">Vaman</span> Malik</h1>
+                
+            </div>
+        </div>
+    </div>
+<!--------about---------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/moonknight.png" >
+                </div>
+
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        Welcome to my portfolio website! I am a passionate computer science student eager to explore the world of technology and its endless possibilities. With a strong foundation in programming languages like Java and Python, as well as a keen interest in web development and machine learning, I am constantly seeking new challenges to expand my skills and knowledge.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Design Web/App Interfaces</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>Current Education</span><br>GRE Test Taker Currently and Masters Aspirant</li>
+                            <li><span>App Development</span><br>Building Android/iOS apps</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021 - Current</span><br>Preparing for Masters in CS. Online Courses.</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021</span><br>Undergrad Student in B.Tech CSE.</li>
+                            <li><span>2016</span><br>12th Pass</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------services------>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>This is my project 1. zhdnanakdnakdsdjkasjdnsakdjk
+                        dsjb fs
+                        sndbfb sn 
+                        nasdjkd
+                        sdjadnjand.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>This is my project 2. sdkjfsjdbj
+                        sjvdjs
+                        sjhdcbdsjh
+                        basjdbkjasnx
+                        sdjhbjfakbkjnakjndc.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>This is my project 3. aszdjhbsadjh
+                        jvdssj
+                        bcdjhbasj
+                        asdjkhbadjnasjnda jsdjknadkj.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!----portfolio-->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work 1.png">
+                <div class="layer">
+                    <h3>Lofi Digital Art 1</h3>
+                    <p>This art is generated by my prompt and 
+                        midjourney ai.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work 2.png">
+                <div class="layer">
+                    <h3>Majestic Himalayas</h3>
+                    <p>This art is generated by my prompt and 
+                        midjourney ai.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work 3.png">
+                <div class="layer">
+                    <h3>City in the hills</h3>
+                    <p>This art is generated by my prompt and 
+                        midjourney ai.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!----contact---->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> vaman040697@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 8527290903</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter-square"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="images/Calculus.pdf" download class="btn btn2">Download CV</a>
+
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Vaman. Made with Easy Tutorials and My Knowledge.</p>
+    </div>
+</div>
+
+
+
+
+    <script src="engine.js"></script>
+    <script src="click.js"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyY6L9BvVgYxnDzerLJSSoZoC5loV5br-KBaoGBNf5qEVduvvGcs4QtLNGopiL21xye/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                }, 5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
